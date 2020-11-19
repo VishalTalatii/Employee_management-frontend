@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 import { UpdateEmployeeComponent } from './employee/update-employee/update-employee.component';
 import { DataTablesModule } from 'angular-datatables';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,6 @@ import { DataTablesModule } from 'angular-datatables';
     CreateEmployeeComponent,
     EmployeeListComponent,
     UpdateEmployeeComponent,
-    
-
   ],
   imports: [
     BrowserModule,
@@ -28,7 +28,7 @@ import { DataTablesModule } from 'angular-datatables';
     ReactiveFormsModule,
     DataTablesModule
   ],
-  providers: [EmployeeService],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy},EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

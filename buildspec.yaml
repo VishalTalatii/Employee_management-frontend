@@ -8,9 +8,9 @@ phases:
       # - apt-get install -y nodejs  #aws code build use ubuntu environement
   pre_build:
     commands:
-      - echo installing dependencies...
-      - npm i -g @angular/cli
-      - npm install
+      # - echo installing dependencies...
+      # - npm i -g @angular/cli
+      # - npm install
   build:
     commands:
       # - echo testing...

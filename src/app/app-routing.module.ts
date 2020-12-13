@@ -9,9 +9,6 @@ const routes: Routes = [
   { path: 'add', component: CreateEmployeeComponent },
   { path: 'employees', component: EmployeeListComponent },
   { path: 'update/:id', component: UpdateEmployeeComponent },
-
-
-
 ];
 
 @NgModule({

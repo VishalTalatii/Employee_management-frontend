@@ -1,18 +1,18 @@
-FROM node:latest as builder
+# FROM node:latest as builder
 
-RUN mkdir -p /app
+# RUN mkdir -p /app
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY . .
+# COPY . .
 
-RUN npm install
-RUN npm run build --prod
+# RUN npm install
+# RUN npm run build --prod
 
-# CMD ["npm", "start"]
+# # CMD ["npm", "start"]
 
-FROM nginx:alpine
-COPY src/nginx/etc/conf.d/default.conf /etc/nginx/conf/default.conf
-COPY --from=builder app/dist/angular8-crud-demo usr/share/nginx/html
+# FROM nginx:alpine
+# COPY src/nginx/etc/conf.d/default.conf /etc/nginx/conf/default.conf
+# COPY --from=builder app/dist/angular8-crud-demo usr/share/nginx/html
 
 

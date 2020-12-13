@@ -4,8 +4,4 @@ export class Employee {
     email: string;
     phone: number;
     department: string;
-
-
-
-
 }

@@ -18,10 +18,10 @@ phases:
       - ng build --prod
   post_build:
     commands:
-      - mv appspec.yml ./dist/Employee Management System
-      - mv scripts ./dist/Employee Management System
+      - mv appspec.yml ./dist/Employee_Management_System
+      - mv scripts ./dist/Employee_Management_System
 artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist/Employee Management System
+  base-directory: dist/Employee_Management_System

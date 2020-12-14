@@ -18,10 +18,10 @@ phases:
       - ng build --prod
   post_build:
     commands:
-      - mv appspec.yml ./dist/angular8-crud-demo
-      - mv scripts ./dist/angular8-crud-demo
+      - mv appspec.yml ./dist/Employee Management System
+      - mv scripts ./dist/Employee Management System
 artifacts:
   files:
     - "**/*"
   discard-paths: no
-  base-directory: dist/angular8-crud-demo
+  base-directory: dist/Employee Management System

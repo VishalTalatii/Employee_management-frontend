@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular8-crud-demo": {
+    "Employee Management System": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular8-crud-demo",
+            "outputPath": "dist/Employee Management System",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular8-crud-demo:build"
+            "browserTarget": "Employee Management System:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular8-crud-demo:build:production"
+              "browserTarget": "Employee Management System:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular8-crud-demo:build"
+            "browserTarget": "Employee Management System:build"
           }
         },
         "test": {
@@ -117,18 +117,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular8-crud-demo:serve"
+            "devServerTarget": "Employee Management System:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular8-crud-demo:serve:production"
+              "devServerTarget": "Employee Management System:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular8-crud-demo",
+  "defaultProject": "Employee Management System",
   "cli": {
     "analytics": "83e87c7a-b222-4978-be6e-c44059c08f28"
   }
